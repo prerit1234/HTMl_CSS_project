@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* background-color: whitesmoke; */
+    }
+
+    header {
+        display: flex;
+        background-color: blue;
+        /* position: fixed; */
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 185px;
+        height: 100px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0px 45px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .search input {
+        width: 100vh;
+        height: 3vh;
+    }
+
+    .search button {
+        width: 55px;
+        height: 25px;
+    }
+
+    .placeholder {
+        padding-left: 10px;
+    }
+
+    .container {
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pic img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_02 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+
+    }
+
+    .pic_03 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_04 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_05 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_06 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_07 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .pic_08 img {
+        width: 85px;
+        height: 50px;
+        padding: 12px 6px 0px 6px;
+        cursor: pointer;
+    }
+
+    .box {
+        width: 100%;
+        height: 280px;
+    }
+
+    .slider {
+        width: 90vw;
+        height: 350px;
+        padding: 0px 68px;
+        background-color: whitesmoke;
+    }
+
+    .slider img {
+        width: 90vw;
+        height: 350px;
+    }
+
+    .electronicsale {
+        width: 100%;
+        height: 340px;
+        background-color: white;
+    }
+
+    .box_01 {
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .box img {
+        width: 230px;
+        height: 230px;
+        position: relative;
+        left: 130px;
+        top: 10px;
+        transition: transform .2s
+    }
+
+    ._3LU4EM {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 183px;
+        color: green;
+    }
+
+    ._3LU4EM_01 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 75px;
+        color: gray;
+    }
+
+    ._3LU4EN {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 200px;
+        color: green;
+    }
+
+    ._3LU4EN_01 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 183px;
+        color: gray;
+    }
+
+    ._3LU4EP {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 170px;
+        color: green;
+    }
+
+    ._3LU4EP_01 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 155px;
+        color: gray;
+    }
+
+    ._3LU4EQ {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 155px;
+        color: green;
+    }
+
+    ._3LU4EQ_01 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 140px;
+        color: gray;
+    }
+
+    .bbd {
+        height: 300px;
+    }
+
+    .column {
+        float: left;
+        width: 32.60%;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .column img {
+        height: 280px;
+    }
+
+    .offer {
+        width: 100%;
+        height: 300px;
+        /* display: flex; */
+        /* justify-content: flex-end; */
+    }
+
+    .sho {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 2px solid lightgray;
+        padding: 20px 20px 70px 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .sho img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .sho:hover img {
+        transform: scale(1.1)
+    }
+
+    .kur {
+        display: inline-block;
+        width: 200px;
+        height: 260px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        text-align: center;
+        padding: 21px 20px 10px 20px;
+    }
+
+    .kur img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+
+    }
+
+    .kur:hover img {
+        transform: scale(1.1)
+    }
+
+    .shoes {
+        display: inline-block;
+        width: 200px;
+        height: 260px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        text-align: center;
+        padding: 21px 20px 10px 20px;
+    }
+
+    .shoes img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .shoes:hover img {
+        transform: scale(1.1)
+    }
+
+    .top {
+        display: inline-block;
+        width: 200px;
+        height: 260px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        text-align: center;
+        padding: 21px 20px 10px 20px;
+    }
+
+    .top img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .top:hover img {
+        transform: scale(1.1)
+    }
+
+    .wat {
+        display: inline-block;
+        width: 200px;
+        height: 258px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        text-align: center;
+        padding: 21px 20px 10px 20px;
+    }
+
+    .wat img {
+        width: 200px;
+        height: 217px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .wat:hover img {
+        transform: scale(1.1)
+    }
+
+    .bud {
+        display: inline-block;
+        width: 200px;
+        height: 258px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        text-align: center;
+        padding: 21px 20px 10px 20px;
+    }
+
+    .bud img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .bud:hover img {
+        transform: scale(1.1)
+    }
+
+
+    footer {
+        width: 100%;
+        height: 400px;
+        background-color: darkblue;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .basic {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 40px 60px 0;
+        column-gap: 20px;
+    }
+
+    .about {
+        color: antiquewhite;
+        display: block;
+        font-size: 12px;
+        padding: 5px 0px 20px 85px;
+    }
+
+    .sam {
+        display: block;
+        padding: 7px 50px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .help {
+        color: antiquewhite;
+        display: block;
+        font-size: 12px;
+        padding-bottom: 27px;
+    }
+
+    .lorem {
+        display: block;
+        padding: 7px 0px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .POlicy {
+        color: antiquewhite;
+        display: block;
+        font-size: 12px;
+        padding-left: 45px;
+        padding-bottom: 20px;
+        padding-top: 7px;
+    }
+
+    .sonu {
+        display: block;
+        padding: 7px 50px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .social {
+        color: antiquewhite;
+        display: block;
+        font-size: 12px;
+        padding-bottom: 27px;
+        padding-top: 7px;
+    }
+
+    .ramu {
+        display: block;
+        padding: 7px 0px;
+        color: white;
+        cursor: pointer;
+    }
+    .side_basic{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 20px 0px 0;
+        column-gap: 10px;
+    }
+    .sin{
+        color: antiquewhite;
+        display: block;
+        font-size: 12px;
+        padding: 7px 0px 27px 35px;
+    }
+    .esh {
+        display: block;
+        padding: 7px 0px;
+        color: white;
+        cursor: pointer;
+    }
+    .below {
+        border-top: 1px solid #454d5e;
+        padding: 5px 0;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Flipkart-logo.png" alt=flipkart>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search Here">
+                    <button class="btn">Search</button>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="pic">
+                <img src="surf.jpg" alt="">
+                <figcaption style="text-align: center;">Grocery</figcaption>
+            </div>
+            <div class="pic_02">
+                <img src="fashion.jpg" alt="">
+                <figcaption style="text-align: center;">Fashion </figcaption>
+            </div>
+            <div class="pic_03">
+                <img src="download.jpg" alt="">
+                <figcaption style="text-align: center;">Mobile</figcaption>
+            </div>
+            <div class="pic_04">
+                <img src="electronic-gadgets.jpg" alt="electronic-gadgets">
+                <figcaption style="text-align: center;">Electronic</figcaption>
+            </div>
+            <div class="pic_05">
+                <img loading="lazy" class="_396cs4" alt="Home & Furniture"
+                    src="https://rukminim2.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+                <figcaption style="text-align: center;">Furniture</figcaption>
+            </div>
+            <div class="pic_06">
+                <img src="tv.jpg" alt="">
+                <figcaption style="text-align: center;">Home Application</figcaption>
+            </div>
+            <div class="pic_07">
+                <img loading="lazy" class="_396cs4" alt="Travel"
+                    src="https://rukminim2.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100">
+                <figcaption style="text-align: center;">Travel</figcaption>
+            </div>
+            <div class="pic_08">
+                <img src="toys.jpg" alt="">
+                <figcaption style="text-align: center;">Toys</figcaption>
+            </div>
+        </div>
+    </main>
+    <div class="slider">
+        <img src="https://source.unsplash.com/1600x500/?shopping-online">
+    </div>
+    <div class="electronicsale">
+        <div class="box_01">
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x500/?trimmer">
+                <figcaption style="padding: 20px 0px 0px 235px">trimmer</figcaption>
+                <div class="_3LU4EM">Starting from ₹699</div>
+                <div class="_3LU4EM_01"> Phillipes, Nova, Panasonic & Many more </div>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x500/?power bank">
+                <figcaption style=" padding: 20px 0px 0px 235px;">PowerBank</figcaption>
+                <div class="_3LU4EN">Starting from ₹799 </div>
+                <div class="_3LU4EN_01">mi,samsung & many more </div>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x500/?moniter">
+                <figcaption style="padding: 20px 0px 0px 235px">moniter</figcaption>
+                <div class="_3LU4EP">Starting from ₹7,699 </div>
+                <div class="_3LU4EP_01">Sansung, Acer & More </div>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x500/?printer">
+                <figcaption style="padding: 20px 0px 0px 180px">Ink Tank printer</figcaption>
+                <div class="_3LU4EQ">Starting from ₹7,999 </div>
+                <div class="_3LU4EQ_01">HP,Canon,Epson&More</div>
+            </div>
+        </div>
+    </div>
+    <div class="bbd">
+        <div class="column">
+            <img src="Screenshot (19).png" style="width: 100%">
+        </div>
+        <div class="column">
+            <img src="Screenshot (20).png" style="width: 100%">
+        </div>
+        <div class="column">
+            <img src="Screenshot (21).png" style="width: 100%">
+        </div>
+    </div>
+    <div class="offer">
+        <div class="sho">
+            <img src="shorts.jpg">
+            <p> Adidas,Hrx & More</p>
+            <b>Minimum 60% off</b>
+        </div>
+        <div class="kur">
+            <img src="kurti.jpg">
+            <p>Amazing Deals!!</p>
+            <b>70% - 80%</b>
+        </div>
+        <div class="shoes">
+            <img src="shoes.jpg">
+            <p>Nike,Skechers...</p>
+            <b>Min 50% Off</b>
+        </div>
+        <div class="top">
+            <img src="tops.jpeg">
+            <p>Tops,Jeans,Dresses...</p>
+            <b>From ₹149</b>
+        </div>
+        <div class="wat">
+            <img src="smartwatch.jpg">
+            <b>Just From ₹1,299</b>
+        </div>
+        <div class="bud">
+            <img src="buds.jpg">
+            <p>realme,Mivi,& More</p>
+            <b>Starting from ₹699</b>
+        </div>
+    </div>
+    <footer>
+        <div class="basic"></div>
+        <div class="about_head">
+            <div class="about">ABOUT</div>
+            <a href="" class="sam"> Contact Us</a>
+            <a href="" class="sam"> About Us</a>
+            <a href="" class="sam"> Career</a>
+            <a href="" class="sam"> Flipkart Stories</a>
+            <a href="" class="sam"> Press</a>
+            <a href="" class="sam"> Flipkart Wholesale</a>
+            <a href="" class="sam"> corporate information</a>
+        </div>
+        <div class="help_desk">
+            <div class="help">HELP</div>
+            <a href="" class="lorem">Payment</a>
+            <a href="" class="lorem">Cancellation & Refund</a>
+            <a href="" class="lorem">Shipping</a>
+            <a href="" class="lorem">FAQ</a>
+        </div>
+        <div class="Costumer">
+            <div class="POlicy">COSTUMER POLICY</div>
+            <a href="" class="sonu">Return Policy</a>
+            <a href="" class="sonu">Term of Use</a>
+            <a href="" class="sonu">Security</a>
+            <a href="" class="sonu">Privacy</a>
+            <a href="" class="sonu">Site map</a>
+        </div>
+        <div class="soci">
+            <div class="social">SOCIAL</div>
+            <a href="" class="ramu">Youtube</a>
+            <a href="" class="ramu">Instagram</a>
+            <a href="" class="ramu">Facebook</a>
+        </div>
+    </div>
+        <hr>
+        <div class="side_basic"></div>
+        <div class="mail">
+        <a href="" class="sin"> Mail Us:</a>
+            <p class="esh"> Flipkart Internet Private Limited,</p>
+            <p class="esh"> Building Alyssa, Bigonia &</p>
+            <p class="esh"> Clove Embassy Tech Village</p>
+            <p class="esh"> Outer Ring Road Deverabeesanahalli Village</p>
+            <p class="esh"> Bengluru,560106</p>
+            <p class="esh"> Karnataka,India</p>
+       </div>
+        <div class="below">
+        <a href=""style="color: white;">Become a Seller</a>
+        <a href=""style="color: white;">Advertise</a>
+        <a href="" style="color: white;">Gift Card</a>
+        <span class="copy">&copy; 2007-2023 Flipkart.com </span>
+        
+        </div>
+    </footer>
+
+</body>
+
+</html>
